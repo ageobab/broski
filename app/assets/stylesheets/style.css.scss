@@ -208,15 +208,16 @@ a:before, a:after {
     $DIVIDERS
 \*------------------------------------*/
 
-.divider { /* It is how single divider look's */
+.divider { 
     width: 100%;
     padding: 35px 0 70px 0;
     max-height: 500px;
     min-height: 300px;
     display: table;
     background-position: center center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     z-index: 999;
+
 
     -webkit-background-size: 100%;
        -moz-background-size: 100%;
@@ -242,7 +243,7 @@ a:before, a:after {
         font-size: 20px;
     }
 
-/* Background images for each divider can be fitted here, for demo purposes I set all images to the same one. Change it to youre likings */
+/* Background images for each divider */
 
 .divider-bg-1 { background-image: asset-url('bonerexplode.png'); }
 
@@ -254,7 +255,7 @@ a:before, a:after {
 
 .divider-bg-5 { background-image: asset-url('youngin.png');
     height: 800px;
-} /* 5 is used for footer section */
+} /* 5 is used for footer */
 
 
 
