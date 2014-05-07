@@ -1,5 +1,5 @@
 Hiddenhook::Application.routes.draw do
-  devise_for :users, skip: [:registrations], controllers: {sessions: 'sessions'}
+  devise_for :users, skip: [:registrations], controllers: {sessions: 'sessions', passwords: 'passwords'}
   devise_scope :user do
     delete "logout" => "devise/sessions#destroy", as: "logout"
   end
